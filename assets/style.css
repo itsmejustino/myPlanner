@@ -24,11 +24,10 @@ textarea{
 }
 
 .jumbo-date-container{
+  width: 100%;
 align-items: center;
 justify-content: center;
-flex-direction: column;
-justify-content: space-between;
-width:200px;
+flex-direction: row;
 }
 #time-clock{
   width:100%;
@@ -38,7 +37,10 @@ justify-content: center;
 }
 
 #date-tracker{
-
+  width:100%;
+  padding: 10px;
+  align-content: center;
+  justify-content: center;
 }
 
 .description{

@@ -21,6 +21,16 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+.jumbo-date-container{
+
+}
+
+#date-tracker{
+display:flex;
+flex-direction: row;
+
+}
+
 .description{
   white-space: pre-wrap;
 }

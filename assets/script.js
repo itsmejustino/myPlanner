@@ -13,11 +13,11 @@ let timeClock = document.getElementById('time-clock')
 let dateTracker = document.getElementById('date-tracker')
 
 window.setInterval(() => {
-  $(timeClock).html(moment().format('h:mm:ss'))
+  $(timeClock).html(moment().format('LTS'))
 }, 1000)
 
 window.setInterval(() => {
-  $(dateTracker).html(moment().format('ddd MM/DD/Y'))
+  $(dateTracker).html(moment().format('dddd - LL'))
 }, 1000)
 
 //dynamically create time boxes that have a text field from 8am-4pm.

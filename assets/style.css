@@ -4,7 +4,7 @@ body {
   line-height: 1;
 }
 
-textarea{
+textarea {
   background: transparent;
   border: none;
   resize: none;
@@ -12,42 +12,59 @@ textarea{
   border-left: 1px solid black;
   padding: 10px;
 }
+.lead{
+  display: flex;
+  flex-wrap: wrap; 
+  align-content: center; 
+  justify-content: center;
+  width: 100%;
+}
 
 .jumbotron {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  text-align: center;
-  background-color: transparent;
+  background-color: #CCE1CE;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
 }
-
-.jumbo-date-container{
+.display-3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  display: flex;
+  flex-wrap: wrap; 
+  align-content: center; 
+  justify-content: center;
   width: 100%;
-align-items: center;
-justify-content: center;
-flex-direction: row;
-}
-#time-clock{
-  width:100%;
-padding: 10px;
-align-content: center;
-justify-content: center;
 }
 
-#date-tracker{
-  width:100%;
+.jumbo-date-container {
+  display:flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#time-clock {
+  
   padding: 10px;
-  align-content: center;
+  align-items: center;
   justify-content: center;
 }
 
-.description{
+#date-tracker {
+  
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
   white-space: pre-wrap;
 }
 
-.time-block{
+.time-block {
   text-align: center;
   border-radius: 15px;
 }
@@ -55,7 +72,7 @@ justify-content: center;
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
 }
 
 .hour {
@@ -83,11 +100,11 @@ justify-content: center;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: #06aed5;
   color: white;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }

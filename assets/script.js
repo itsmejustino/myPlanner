@@ -2,8 +2,7 @@
 //assign given variable that will track a running clock with moment .js
 // boxes that have a text field from 8am-4pm.
 //call a function that will change the color of the current time block. Time block will turn a color at the end of every hour to indicate the time has passed. Current time will be indicated with a light color. Time blocks in the future by 1 hour will be a light color.
-// add save button to each timeblock. onclick the button will store information to local storage using current text input.
-// current text input can be added to and saved again in local storage
+
 //track input to local storage and print underneath the jumbotron
 //indicate local storage was successful with message fill with id inidcate action
 
@@ -20,14 +19,10 @@ window.setInterval(() => {
   $(dateTracker).html(moment().format("dddd - LL"));
 }, 1000);
 
-// let hourTracker = setInterval(() => {
-//   $(hourTracker).html(moment().format(" hh:mm:ss "));
-//   console.log(hourTracker);
-// }, 1000);
-
 // time boxes that have a text field  and each is labeled from 8am-4pm.
 //call a function that will change the color of the current time block. Time block will turn a color at the end of every hour to indicate the time has passed. Current time will be indicated with a light color. Time blocks in the future by 1 hour will be a light color. use time clock H to change the color.
 
+//assign timeblocks to variable.
 let timeBlock1 = document.getElementById("text-input-hr1");
 let timeBlock2 = document.getElementById("text-input-hr2");
 let timeBlock3 = document.getElementById("text-input-hr3");
@@ -39,25 +34,6 @@ let timeBlock8 = document.getElementById("text-input-hr8");
 let timeBlock9 = document.getElementById("text-input-hr9");
 
 //when hour tracker increases by 1 Gray color of time block. change time block of current schedule to green. reset all colors after hour increases 24 times.
-
-// //timeblock color change for passed time
-// function minutesTracker() {
-//   //get the mins of the current time
-//   let minutes = new Date().getMinutes();
-//   if (minutes == "00") {
-//     timeBlock1.style.backgroundColor = "lightgray";
-//     timeBlock2.style.backgroundColor = "lightgray";
-//     timeBlock3.style.backgroundColor = "lightgray";
-//     timeBlock4.style.backgroundColor = "lightgray";
-//     timeBlock5.style.backgroundColor = "lightgray";
-//     timeBlock6.style.backgroundColor = "lightgray";
-//     timeBlock7.style.backgroundColor = "lightgray";
-//     timeBlock8.style.backgroundColor = "lightgray";
-//     timeBlock9.style.backgroundColor = "lightgray";
-//   }
-
-// }
-// setInterval(minutesTracker, 1000);
 
 //timeblock color change for current time
 let hourBlock1 = document.querySelector("hour1");
@@ -88,6 +64,7 @@ let hourBlock9 = document.querySelector("hour9");
 hourBlock9 = 16;
 console.log(hourBlock9);
 
+//track hours and change colors depending on boolean statement
 function currentHourTracker() {
   let hours = new Date().getHours();
   console.log(hours);
@@ -165,5 +142,95 @@ function currentHourTracker() {
     timeBlock9.style.backgroundColor = "lightgrey";
   }
 }
-
+//run function on time 1second interval to keep most up to date
 setInterval(currentHourTracker, 1000);
+
+// onclick the button will store information to local storage using current text input. Preventdefault on click as well so that text does not dissapear.
+// current text input can be added to and saved again in local storage
+
+let saveBtn1 = document.getElementById("s-btn-1");
+let saveBtn2 = document.getElementById("s-btn-2");
+let saveBtn3 = document.getElementById("s-btn-3");
+let saveBtn4 = document.getElementById("s-btn-4");
+let saveBtn5 = document.getElementById("s-btn-5");
+let saveBtn6 = document.getElementById("s-btn-6");
+let saveBtn7 = document.getElementById("s-btn-7");
+let saveBtn8 = document.getElementById("s-btn-8");
+let saveBtn9 = document.getElementById("s-btn-9");
+
+//function send text to local storage.
+function saveText1() {
+  if (timeBlock1.value.length > 0) {
+    localStorage.setItem("Block1", timeBlock1.value);
+    console.log("working??");
+  }
+}
+function saveText2() {
+  if (timeBlock2.value.length > 0) {
+    localStorage.setItem("Block2", timeBlock2.value);
+    console.log("working??");
+  }
+}
+function saveText3() {
+  if (timeBlock3.value.length > 0) {
+    localStorage.setItem("Block3", timeBlock2.value);
+    console.log("working??");
+  }
+}
+function saveText4() {
+  if (timeBlock4.value.length > 0) {
+    localStorage.setItem("Block4", timeBlock2.value);
+    console.log("working??");
+  }
+}
+function saveText5() {
+  if (timeBlock5.value.length > 0) {
+    localStorage.setItem("Block2", timeBlock5.value);
+    console.log("working??");
+  }
+}
+function saveText6() {
+  if (timeBlock6.value.length > 0) {
+    localStorage.setItem("Block2", timeBlock6.value);
+    console.log("working??");
+  }
+}
+function saveText7() {
+  if (timeBlock2.value.length > 0) {
+    localStorage.setItem("Block7", timeBlock7.value);
+    console.log("working??");
+  }
+}
+function saveText8() {
+  if (timeBlock8.value.length > 0) {
+    localStorage.setItem("Block8", timeBlock8.value);
+    console.log("working??");
+  }
+}
+function saveText9() {
+  if (timeBlock9.value.length > 0) {
+    localStorage.setItem("Block9", timeBlock9.value);
+    console.log("working??");
+  }
+}
+
+saveBtn1.addEventListener("click", saveText1);
+saveBtn2.addEventListener("click", saveText2);
+saveBtn3.addEventListener("click", saveText3);
+saveBtn4.addEventListener("click", saveText4);
+saveBtn5.addEventListener("click", saveText5);
+saveBtn6.addEventListener("click", saveText6);
+saveBtn7.addEventListener("click", saveText7);
+saveBtn8.addEventListener("click", saveText8);
+saveBtn9.addEventListener("click", saveText9);
+
+//get the saved value function - return the value of "v" from localStorage.
+//    function getSavedValue (timeBlock1){
+//     if (!localStorage.getItem(timeBlock1.value)){
+
+//     }
+//     {
+//         return "";// You can change this to your defualt value.
+//     }
+//     return localStorage.getItem(v);
+// }

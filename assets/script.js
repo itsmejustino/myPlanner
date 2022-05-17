@@ -1,6 +1,6 @@
 // create a clock function
 //assign given variable that will track a running clock with moment .js
-//dynamically create time boxes that have a text field from 8am-4pm.
+// boxes that have a text field from 8am-4pm.
 //call a function that will change the color of the current time block. Time block will turn a color at the end of every hour to indicate the time has passed. Current time will be indicated with a light color. Time blocks in the future by 1 hour will be a light color.
 // add save button to each timeblock. onclick the button will store information to local storage using current text input.
 // current text input can be added to and saved again in local storage
@@ -13,11 +13,22 @@ let timeClock = document.getElementById('time-clock')
 let dateTracker = document.getElementById('date-tracker')
 
 window.setInterval(() => {
-  $(timeClock).html(moment().format('LTS'))
+  $(timeClock).html(moment().format('h:mm:ss'))
 }, 1000)
 
 window.setInterval(() => {
   $(dateTracker).html(moment().format('dddd - LL'))
 }, 1000)
 
-//dynamically create time boxes that have a text field from 8am-4pm.
+// time boxes that have a text field  and each is labeled from 8am-4pm.
+//call a function that will change the color of the current time block. Time block will turn a color at the end of every hour to indicate the time has passed. Current time will be indicated with a light color. Time blocks in the future by 1 hour will be a light color. use time clock H to change the color. 
+
+let timeBlock1 = document.getElementById('')
+let timeBlock2 = document.getElementById('')
+let timeBlock3 = document.getElementById('')
+let timeBlock4 = document.getElementById('')
+let timeBlock5 = document.getElementById('')
+let timeBlock6 = document.getElementById('')
+let timeBlock7 = document.getElementById('')
+let timeBlock8 = document.getElementById('')
+let timeBlock9 = document.getElementById('')

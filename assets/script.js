@@ -162,8 +162,9 @@ let saveBtn9 = document.getElementById("s-btn-9");
 function saveText1() {
   if (timeBlock1.value.length > 0) {
     localStorage.setItem("Block1", timeBlock1.value);
-    console.log("working??");
-  }
+    console.log("Block1 text saved successfully");
+    
+}
 }
 function saveText2() {
   if (timeBlock2.value.length > 0) {
@@ -185,13 +186,13 @@ function saveText4() {
 }
 function saveText5() {
   if (timeBlock5.value.length > 0) {
-    localStorage.setItem("Block2", timeBlock5.value);
+    localStorage.setItem("Block5", timeBlock5.value);
     console.log("working??");
   }
 }
 function saveText6() {
   if (timeBlock6.value.length > 0) {
-    localStorage.setItem("Block2", timeBlock6.value);
+    localStorage.setItem("Block6", timeBlock6.value);
     console.log("working??");
   }
 }
@@ -234,3 +235,35 @@ saveBtn9.addEventListener("click", saveText9);
 //     }
 //     return localStorage.getItem(v);
 // }
+ function onPageLoad(){
+   //if(localStorage.getItem("Block1").value >= 1)
+  timeBlock1.value = localStorage.getItem("Block1", timeBlock1.value);
+  console.log("The stored value is:" + timeBlock1.value);
+  console.log("retrieved stored text item and set to timeBlock1");
+  timeBlock2.value = localStorage.getItem("Block2", timeBlock2.value);
+  console.log("The stored value is:" + timeBlock2.value);
+  console.log("retrieved stored text item and set to timeBlock1");
+  timeBlock3.value = localStorage.getItem("Block3", timeBlock3.value);
+  console.log("The stored value is:" + timeBlock3.value);
+  console.log("retrieved stored text item and set to timeBlock1");
+  timeBlock4.value = localStorage.getItem("Block4", timeBlock4.value);
+  console.log("The stored value is:" + timeBlock4.value);
+  console.log("retrieved stored text item and set to timeBlock1");
+  timeBlock5.value = localStorage.getItem("Block5", timeBlock5.value);
+  console.log("The stored value is:" + timeBlock5.value);
+  console.log("retrieved stored text item and set to timeBlock1");
+  timeBlock6.value = localStorage.getItem("Block6", timeBlock6.value);
+  console.log("The stored value is:" + timeBlock6.value);
+  console.log("retrieved stored text item and set to timeBlock1");
+  timeBlock7.value = localStorage.getItem("Block7", timeBlock7.value);
+  console.log("The stored value is:" + timeBlock7.value);
+  console.log("retrieved stored text item and set to timeBlock1");
+  timeBlock8.value = localStorage.getItem("Block8", timeBlock8.value);
+  console.log("The stored value is:" + timeBlock8.value);
+  console.log("retrieved stored text item and set to timeBlock1");
+  timeBlock9.value = localStorage.getItem("Block9", timeBlock9.value);
+  console.log("The stored value is:" + timeBlock9.value);
+  console.log("retrieved stored text item and set to timeBlock1");
+   
+}
+onPageLoad();

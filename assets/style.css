@@ -108,3 +108,22 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+.hour1{
+
+display: flex;
+align-items: center;
+justify-content: center;
+width: 10px;
+height: 10px;
+}
+
+text{
+  border:2px solid lightgray;
+align-items: center;
+justify-content: center;
+height:80%;  
+display:flex;
+padding: 10px;
+}
+

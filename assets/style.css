@@ -2,24 +2,14 @@
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 
 }
-input{
-height:42px;
-}
+
 
 body {
   
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
 }
 
-textarea {
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
 .lead{
   display: flex;
   flex-wrap: wrap; 
@@ -130,7 +120,7 @@ text{
   border:2px solid lightgray;
 align-items: center;
 justify-content: center;
-height:80%;  
+height:100%;  
 display:flex;
 padding: 10px;
 }

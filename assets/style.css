@@ -127,4 +127,20 @@ display:flex;
 padding: 10px;
 }
 
+.indicator-container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.indicator-style{
+ display:none;
+  width: 18%;
+  margin-bottom: 10px;
+}
+  .indicator-message{
+  display: none;
+
+  }
+
 

@@ -1,12 +1,8 @@
 // create a clock function
-//assign given variable that will track a running clock with moment .js
-// boxes that have a text field from 8am-4pm.
-//call a function that will change the color of the current time block. Time block will turn a color at the end of every hour to indicate the time has passed. Current time will be indicated with a light color. Time blocks in the future by 1 hour will be a light color.
-
-//track input to local storage and print underneath the jumbotron
-//indicate local storage was successful with message fill with id inidcate action
-
-//clock function. call on element id #time-clock in jumbotron and assign a let vaariable. assign function to call on the variable in jumbotron to print timeclock and update in a loop. set timeclock to display interval to update timer every second. Do the same to track date in readable format. set to update every second to stay current with time.
+//clock function. call on element id #time-clock in jumbotron and assign a let variable. 
+//assign function to call on the variable in jumbotron to print timeclock and update. 
+//set timeclock to display interval to update timer every second. Do the same to track date in readable format. 
+//set to update every second to stay current with time. 
 
 let timeClock = document.getElementById("time-clock");
 let dateTracker = document.getElementById("date-tracker");
@@ -158,59 +154,104 @@ let saveBtn7 = document.getElementById("s-btn-7");
 let saveBtn8 = document.getElementById("s-btn-8");
 let saveBtn9 = document.getElementById("s-btn-9");
 
-//function send text to local storage.
+//indicate when the save was successful to in
+let indicate = document.getElementById("indicator-text");
+let indicateGif = document.getElementById("indicator-gif");
+
+Show = () => {
+  setTimeout(function() {
+    document.getElementById("indicator-gif").style.display = "block";
+    document.getElementById("indicator-text").style.display = "block";
+}, 0) 
+}
+Hide = () => {
+  setTimeout(function() {
+    document.getElementById("indicator-gif").style.display = "none";
+    document.getElementById("indicator-text").style.display = "none";
+}, 4000) 
+}
+
+//functions send text to local storage.
 saveText1 = () => {
   if (timeBlock1.value.length > 0) {
     localStorage.setItem("Block1", timeBlock1.value);
     console.log("Block1 text saved successfully");
+    indicate.textContent = "The plan was successfully saved.";
+    Show();
+    Hide();
+    
   }
 };
 saveText2 = () => {
   if (timeBlock2.value.length > 0) {
     localStorage.setItem("Block2", timeBlock2.value);
     console.log("working??");
+    indicate.textContent = "The plan was successfully saved.";
+    Show();
+    Hide();
   }
 };
 saveText3 = () => {
   if (timeBlock3.value.length > 0) {
     localStorage.setItem("Block3", timeBlock3.value);
     console.log("working??");
+    indicate.textContent = "The plan was successfully saved.";
+    Show();
+    Hide();
   }
 };
 saveText4 = () => {
   if (timeBlock4.value.length > 0) {
     localStorage.setItem("Block4", timeBlock4.value);
     console.log("working??");
+    indicate.textContent = "The plan was successfully saved.";
+    Show();
+    Hide();
   }
 };
 saveText5 = () => {
   if (timeBlock5.value.length > 0) {
     localStorage.setItem("Block5", timeBlock5.value);
     console.log("working??");
+    indicate.textContent = "The plan was successfully saved.";
+    Show();
+    Hide();
   }
 };
 saveText6 = () => {
   if (timeBlock6.value.length > 0) {
     localStorage.setItem("Block6", timeBlock6.value);
     console.log("working??");
+    indicate.textContent = "The plan was successfully saved.";
+    Show();
+    Hide();
   }
 };
 saveText7 = () => {
   if (timeBlock2.value.length > 0) {
     localStorage.setItem("Block7", timeBlock7.value);
     console.log("working??");
+    indicate.textContent = "The plan was successfully saved.";
+    Show();
+    Hide();
   }
 };
 saveText8 = () => {
   if (timeBlock8.value.length > 0) {
     localStorage.setItem("Block8", timeBlock8.value);
     console.log("working??");
+    indicate.textContent = "The plan was successfully saved.";
+    Show();
+    Hide();
   }
 };
 saveText9 = () => {
   if (timeBlock9.value.length > 0) {
     localStorage.setItem("Block9", timeBlock9.value);
     console.log("working??");
+    indicate.textContent = "The plan was successfully saved.";
+    Show();
+    Hide();
   }
 };
 

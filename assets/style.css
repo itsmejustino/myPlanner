@@ -1,5 +1,13 @@
+*{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+input{
+height:42px;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  
   font-size: 16px;
   line-height: 1;
 }

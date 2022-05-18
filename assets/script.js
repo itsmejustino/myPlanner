@@ -64,7 +64,7 @@ let hourBlock9 = document.querySelector("hour9");
 hourBlock9 = 16;
 console.log(hourBlock9);
 
-//track hours and change colors depending on boolean statement
+//track hours and change colors depending on boolean statement. 
 function currentHourTracker() {
   let hours = new Date().getHours();
   console.log(hours);
@@ -145,7 +145,7 @@ function currentHourTracker() {
 //run function on time 1second interval to keep most up to date
 setInterval(currentHourTracker, 1000);
 
-// onclick the button will store information to local storage using current text input. Preventdefault on click as well so that text does not dissapear.
+// onclick the button will store information to local storage using current text input. 
 // current text input can be added to and saved again in local storage
 
 let saveBtn1 = document.getElementById("s-btn-1");
@@ -163,57 +163,56 @@ saveText1 = () => {
   if (timeBlock1.value.length > 0) {
     localStorage.setItem("Block1", timeBlock1.value);
     console.log("Block1 text saved successfully");
-    
-}
-}
+  }
+};
 saveText2 = () => {
   if (timeBlock2.value.length > 0) {
     localStorage.setItem("Block2", timeBlock2.value);
     console.log("working??");
   }
-}
+};
 saveText3 = () => {
   if (timeBlock3.value.length > 0) {
     localStorage.setItem("Block3", timeBlock3.value);
     console.log("working??");
   }
-}
- saveText4 = () => {
+};
+saveText4 = () => {
   if (timeBlock4.value.length > 0) {
     localStorage.setItem("Block4", timeBlock4.value);
     console.log("working??");
   }
-}
+};
 saveText5 = () => {
   if (timeBlock5.value.length > 0) {
     localStorage.setItem("Block5", timeBlock5.value);
     console.log("working??");
   }
-}
+};
 saveText6 = () => {
   if (timeBlock6.value.length > 0) {
     localStorage.setItem("Block6", timeBlock6.value);
     console.log("working??");
   }
-}
+};
 saveText7 = () => {
   if (timeBlock2.value.length > 0) {
     localStorage.setItem("Block7", timeBlock7.value);
     console.log("working??");
   }
-}
+};
 saveText8 = () => {
   if (timeBlock8.value.length > 0) {
     localStorage.setItem("Block8", timeBlock8.value);
     console.log("working??");
   }
-}
+};
 saveText9 = () => {
   if (timeBlock9.value.length > 0) {
     localStorage.setItem("Block9", timeBlock9.value);
     console.log("working??");
   }
-}
+};
 
 saveBtn1.addEventListener("click", saveText1);
 saveBtn2.addEventListener("click", saveText2);
@@ -225,7 +224,7 @@ saveBtn7.addEventListener("click", saveText7);
 saveBtn8.addEventListener("click", saveText8);
 saveBtn9.addEventListener("click", saveText9);
 
- onPageLoad = () => {
+onPageLoad = () => {
   timeBlock1.value = localStorage.getItem("Block1", timeBlock1.value);
   console.log("The stored value is:" + timeBlock1.value);
   console.log("retrieved stored text item and set to timeBlock1");
@@ -253,6 +252,5 @@ saveBtn9.addEventListener("click", saveText9);
   timeBlock9.value = localStorage.getItem("Block9", timeBlock9.value);
   console.log("The stored value is:" + timeBlock9.value);
   console.log("retrieved stored text item and set to timeBlock1");
-   
-}
+};
 onPageLoad();

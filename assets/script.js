@@ -159,56 +159,56 @@ let saveBtn8 = document.getElementById("s-btn-8");
 let saveBtn9 = document.getElementById("s-btn-9");
 
 //function send text to local storage.
-function saveText1() {
+saveText1 = () => {
   if (timeBlock1.value.length > 0) {
     localStorage.setItem("Block1", timeBlock1.value);
     console.log("Block1 text saved successfully");
     
 }
 }
-function saveText2() {
+saveText2 = () => {
   if (timeBlock2.value.length > 0) {
     localStorage.setItem("Block2", timeBlock2.value);
     console.log("working??");
   }
 }
-function saveText3() {
+saveText3 = () => {
   if (timeBlock3.value.length > 0) {
-    localStorage.setItem("Block3", timeBlock2.value);
+    localStorage.setItem("Block3", timeBlock3.value);
     console.log("working??");
   }
 }
-function saveText4() {
+ saveText4 = () => {
   if (timeBlock4.value.length > 0) {
-    localStorage.setItem("Block4", timeBlock2.value);
+    localStorage.setItem("Block4", timeBlock4.value);
     console.log("working??");
   }
 }
-function saveText5() {
+saveText5 = () => {
   if (timeBlock5.value.length > 0) {
     localStorage.setItem("Block5", timeBlock5.value);
     console.log("working??");
   }
 }
-function saveText6() {
+saveText6 = () => {
   if (timeBlock6.value.length > 0) {
     localStorage.setItem("Block6", timeBlock6.value);
     console.log("working??");
   }
 }
-function saveText7() {
+saveText7 = () => {
   if (timeBlock2.value.length > 0) {
     localStorage.setItem("Block7", timeBlock7.value);
     console.log("working??");
   }
 }
-function saveText8() {
+saveText8 = () => {
   if (timeBlock8.value.length > 0) {
     localStorage.setItem("Block8", timeBlock8.value);
     console.log("working??");
   }
 }
-function saveText9() {
+saveText9 = () => {
   if (timeBlock9.value.length > 0) {
     localStorage.setItem("Block9", timeBlock9.value);
     console.log("working??");
@@ -225,18 +225,7 @@ saveBtn7.addEventListener("click", saveText7);
 saveBtn8.addEventListener("click", saveText8);
 saveBtn9.addEventListener("click", saveText9);
 
-//get the saved value function - return the value of "v" from localStorage.
-//    function getSavedValue (timeBlock1){
-//     if (!localStorage.getItem(timeBlock1.value)){
-
-//     }
-//     {
-//         return "";// You can change this to your defualt value.
-//     }
-//     return localStorage.getItem(v);
-// }
- function onPageLoad(){
-   //if(localStorage.getItem("Block1").value >= 1)
+ onPageLoad = () => {
   timeBlock1.value = localStorage.getItem("Block1", timeBlock1.value);
   console.log("The stored value is:" + timeBlock1.value);
   console.log("retrieved stored text item and set to timeBlock1");

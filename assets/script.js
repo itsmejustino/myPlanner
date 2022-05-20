@@ -166,7 +166,7 @@ Show = () => {
 }
 Hide = () => {
   setTimeout(function() {
-    document.getElementById("indicator-gif").style.display += "none";
+    document.getElementById("indicator-gif").style.display = "none";
     document.getElementById("indicator-text").style.display = "none";
 }, 4000) 
 }

@@ -19,5 +19,5 @@ This application utilizes JavaScript, JQuery, HTML, CSS, and Bootstrap
 ## demo with all past times
 ![alt text](https://github.com/itsmejustino/myPlanner/blob/main/assets/Screenshot%202022-05-19%20233608.png)
 
-## demo with active time and plans.
+## demo with active time and plans
 ![alt text](https://github.com/itsmejustino/myPlanner/blob/main/assets/myplanner.PNG)

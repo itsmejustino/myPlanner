@@ -5,3 +5,9 @@ Each time window will coordinate to a color to indicate current, present, and fu
 
 # technologies used
 This application utilizes JavaScript, JQuery, HTML, CSS, Bootstrap
+
+
+# Demo
+
+https://github.com/itsmejustino/myPlanner/blob/main/assets/Screenshot%202022-05-19%20233608.png
+

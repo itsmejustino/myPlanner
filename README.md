@@ -9,5 +9,5 @@ This application utilizes JavaScript, JQuery, HTML, CSS, Bootstrap
 
 # Demo
 
-https://github.com/itsmejustino/myPlanner/blob/main/assets/Screenshot%202022-05-19%20233608.png
+![alt text](https://github.com/itsmejustino/myPlanner/blob/main/assets/Screenshot%202022-05-19%20233608.png)
 
